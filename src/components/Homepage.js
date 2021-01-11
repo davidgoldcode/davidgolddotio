@@ -51,7 +51,7 @@ const Homepage = () => {
             ))}
           </ul>
         </section>
-        <footer className="flex flex-row">
+        <footer className="flex flex-row w-8/12 justify-around">
           <a href="https://github.com/davidgoldcode">
             <AiFillGithub style={{ fontSize: iconSize }} />
           </a>
