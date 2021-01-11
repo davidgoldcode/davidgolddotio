@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.0.0",
+    "autoprefixer": "^10.2.1",
+    "postcss": "^8.2.4",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-scripts": "2.1.1",
@@ -13,8 +15,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-     "eject": "react-scripts eject"
- },
+    "eject": "react-scripts eject"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
