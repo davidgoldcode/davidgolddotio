@@ -6,26 +6,13 @@ import {
   AiFillMediumSquare,
   AiFillLinkedin,
 } from "react-icons/ai";
-import { skills, social } from "../data";
+import { skills } from "../data";
 import { default as webp } from "../assets/webp/davidnyc.webp";
 import { default as gif } from "../assets/original/davidnyc.gif";
 
-const componentSwitch = ({ name }) => {
-  switch (name) {
-    case "Mail":
-      return <AiOutlineMail />;
-    case "Github":
-      return <AiFillGithub />;
-    case "Twitter":
-      return <AiOutlineTwitter />;
-    case "Medium":
-      return <AiFillMediumSquare />;
-    case "LinkedIn":
-      return <AiFillLinkedin />;
-  }
-};
-
 const Homepage = () => {
+  const iconSize = "2.5rem";
+
   return (
     <main className="grid grid-cols-2 h-screen w-screen">
       <ImgWithFallback
@@ -65,9 +52,21 @@ const Homepage = () => {
           </ul>
         </section>
         <footer className="flex flex-row">
-          {social.map((media) => {
-            <a href={media.link}>{() => componentSwitch(media.name)}</a>;
-          })}
+          <a href="https://github.com/davidgoldcode">
+            <AiFillGithub style={{ fontSize: iconSize }} />
+          </a>
+          <a href="mailto:davidgold@hey.com">
+            <AiOutlineMail style={{ fontSize: iconSize }} />
+          </a>
+          <a href="https://twitter.com/davidigold">
+            <AiOutlineTwitter style={{ fontSize: iconSize }} />
+          </a>
+          <a href="https://golddavid.medium.com">
+            <AiFillMediumSquare style={{ fontSize: iconSize }} />
+          </a>
+          <a href="https://www.linkedin.com/in/davidigold/">
+            <AiFillLinkedin style={{ fontSize: iconSize }} />
+          </a>
         </footer>
       </section>
     </main>

@@ -12,29 +12,29 @@ export const skills = [
   "redux",
 ];
 
-export const social = [
+const social = [
   {
-    comp: "AiFillGithub",
+    comp: <AiFillGithub />,
     name: "Github",
     link: "https://github.com/davidgoldcode",
   },
   {
-    comp: "AiOutlineMail",
+    comp: <AiOutlineMail />,
     name: "Mail",
     link: "mailto:davidgold@hey.com",
   },
   {
-    comp: "AiOutlineTwitter",
+    comp: <AiOutlineTwitter />,
     name: "Twitter",
     link: "https://twitter.com/davidigold",
   },
   {
-    comp: "AiFillMediumSquare",
+    comp: <AiFillMediumSquare />,
     name: "Medium",
     link: "https://golddavid.medium.com/",
   },
   {
-    comp: "AiFillLinkedin",
+    comp: <AiFillLinkedin />,
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/davidigold/",
   },
