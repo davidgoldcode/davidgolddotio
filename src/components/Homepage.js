@@ -1,4 +1,5 @@
 import ImgWithFallback from "../utils/ImgWithFallback";
+import { skills } from "../data";
 import { default as webp } from "../assets/webp/davidnyc.webp";
 import { default as gif } from "../assets/original/davidnyc.gif";
 
@@ -30,6 +31,16 @@ const Homepage = () => {
             more about me or potentially working with me, feel free to contact
             me
           </p>
+        </section>
+        <section className="w-6/12">
+          <h3 className="text-3xl">Skills</h3>
+          <ul className="list-none">
+            {skills.map((item) => (
+              <li class="text-xs m-0.5 font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-200">
+                {item}
+              </li>
+            ))}
+          </ul>
         </section>
       </section>
     </main>
