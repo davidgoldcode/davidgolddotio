@@ -31,11 +31,9 @@ const Projects = (props) => {
             ))}
           </ul>
         </section>
-        {repo && (
-          <footer className="flex flex-row w-8/12 justify-around">
-            <a href="https://github.com/davidgoldcode">{repo}</a>
-          </footer>
-        )}
+        <footer className="flex flex-row w-8/12 justify-around">
+          <a href="https://github.com/davidgoldcode">{repo}</a>
+        </footer>
       </section>
     </main>
   );
