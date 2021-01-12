@@ -27,6 +27,12 @@ export const projects = [
     body:
       "The Rotation is start up operational nationwide known as the 'rent the runway' for men. The company offer 120+ cutting edge brands such as Rhude, Ksubi, and John Elliott. I helped build out the stripe api integration, embedded search functionality and their core catalog display",
     tech: ["React", "Ruby on Rails", "Python", "StripeAPI", "FuseJS"],
+    gif: {
+      src: rotationwebp,
+      fallback: rotationsvg,
+      alt: "Exploding Calculator",
+      class: "object-none w-full bg-black",
+    },
     img: {
       src: rotationwebp,
       fallback: rotationsvg,

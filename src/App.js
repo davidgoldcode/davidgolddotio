@@ -16,6 +16,7 @@ function App() {
           body={item.body}
           tech={item.tech}
           img={item.img}
+          gif={item.gif}
         />
       ))}
     </>

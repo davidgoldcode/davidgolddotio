@@ -1,18 +1,22 @@
+import { useState } from "react";
 import ImgWithFallback from "../utils/ImgWithFallback";
 
 const Projects = (props) => {
-  const { name, link, repo, body, tech, img } = props;
+  const { name, link, repo, body, tech, img, gif } = props;
+  const [hover, setHover] = useState(false);
+
   return (
     <main className="grid grid-cols-2 h-screen w-screen">
       <ImgWithFallback
-        src={img.src}
-        fallback={img.fallback}
-        alt={img.alt}
-        className={`h-screen w-screen object-cover ${
+        src={hover ? gif.src : img.src}
+        fallback={hover ? gif.fallback : img.fallback}
+        alt={hover ? gif.alt : img.alt}
+        className={`h-screen w-full object-cover hover:hidden ${
           img.class || "object-center"
         }`}
+        onMouseOver={() => setHover(true)}
+        onMouseOut={() => setHover(false)}
       />
-
       <section className="flex flex-col items-center text-center justify-around">
         <header className="w-8/12">
           <h1 className="text-4xl"> Project </h1>

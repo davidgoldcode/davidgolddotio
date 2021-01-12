@@ -8,7 +8,9 @@ module.exports = {
         DEFAULT: "#222023",
       },
     },
-    extend: {},
+    extend: {
+      display: ["hover"],
+    },
     fontFamily: {
       sans: ["Verdana", "sans-serif"],
       serif: ["Merriweather", "serif"],
