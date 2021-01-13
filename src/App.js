@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Homepage from "./components/Homepage";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import { projects as data } from "./data";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           gif={item.gif}
         />
       ))}
+      <Contact />
     </>
   );
 }
