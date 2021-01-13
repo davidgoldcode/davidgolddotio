@@ -1,4 +1,5 @@
 import ImgWithFallback from "../utils/ImgWithFallback";
+import { useState } from "react";
 import {
   AiFillGithub,
   AiOutlineMail,
@@ -9,21 +10,26 @@ import {
 import { skills } from "../data";
 import { default as gif } from "../assets/original/davidnyc.gif";
 import { default as webp } from "../assets/webp/davidnyc.webp";
+import { default as svg } from "../assets/original/img.svg";
 
 const Homepage = () => {
+  const [hover, setHover] = useState(false);
+
   const iconSize = "2.5rem";
 
   return (
     <main className="grid grid-cols-2 h-screen w-screen">
       <ImgWithFallback
-        src={webp}
-        fallback={gif}
+        src={hover ? webp : svg}
+        fallback={hover ? gif : svg}
         alt="Gif of David in NYC"
         className="h-screen w-screen object-cover object-top"
+        onMouseOver={() => setHover(true)}
+        onMouseOut={() => setHover(false)}
       />
       <section className="flex flex-col items-center text-center justify-around">
         <header className="w-8/12">
-          <h1 className="text-4xl"> Hi 👋 I'm David </h1>
+          <h1 className="text-3xl font-black m-1"> Hi 👋 I'm David </h1>
         </header>
         <section className="w-8/12">
           <h3 className="text-2xl font-black uppercase m-1">About</h3>
@@ -41,9 +47,9 @@ const Homepage = () => {
         </section>
         <section className="w-8/12">
           <h3 className="text-2xl font-black uppercase m-1">Skills</h3>
-          <ul className="list-none">
+          <ul className="list-none ">
             {skills.map((item) => (
-              <li class="text-xs m-0.5 font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-200">
+              <li class="text-xs m-0.5 font-semibold inline-block border-2 border-gray-200 py-1 px-2 uppercase rounded-full text-gray-600 bg-blue-200">
                 {item}
               </li>
             ))}
