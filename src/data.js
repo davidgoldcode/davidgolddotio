@@ -6,12 +6,16 @@ import { default as deathmetalgif } from "./assets/original/deathmetal.gif";
 import { default as deathmetalwebp } from "./assets/webp/deathmetal.webp";
 import { default as deathmetalstillsvg } from "./assets/webp/deathmetalstill.webp";
 import { default as deathmetalstillwebp } from "./assets/webp/deathmetalstill.webp";
+import { default as nbapaintsvg } from "./assets/original/nbapaintwip.svg";
+import { default as nbapaintwebp } from "./assets/webp/nbapaintwip.webp";
+import { default as test } from "./assets/original/test.svg";
 
 export const skills = [
   "python",
   "javascript",
   "react",
   "nodejs",
+  "express",
   "html",
   "css",
   "jest",
@@ -39,7 +43,7 @@ export const projects = [
       src: rotationwebp,
       fallback: rotationsvg,
       alt: "Model wearing designer clothing",
-      class: "object-left-top	",
+      class: "object-left-top	object-cover",
     },
   },
   {
@@ -60,6 +64,26 @@ export const projects = [
       fallback: deathmetalstillwebp,
       alt: "Exploding Calculator",
       class: "object-none w-full bg-black",
+    },
+  },
+  {
+    name: "NBA Paint",
+    link: "",
+    repo: "https://github.com/davidgoldcode/nbapaint",
+    body:
+      "The simple calculator: a rite of passage in a new developer’s portfolio but with a hardcore twist 🤘",
+    tech: ["React", "Styled Components", "Twitter API"],
+    gif: {
+      src: "",
+      fallback: "",
+      alt: "",
+      class: "",
+    },
+    img: {
+      src: nbapaintwebp,
+      fallback: nbapaintsvg,
+      alt: "NBA Paint Homepage",
+      class: "object-scale-down w-full bg-brown",
     },
   },
 ];
