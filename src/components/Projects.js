@@ -1,5 +1,7 @@
 import { useState } from "react";
 import ImgWithFallback from "../utils/ImgWithFallback";
+import { default as cautionsvg } from "../../src/assets/original/cautiontape.svg";
+import { default as cautionwebp } from "../../src/assets/webp/cautiontape.webp";
 
 const Projects = (props) => {
   const { name, link, repo, body, tech, img, gif } = props;
@@ -11,13 +13,25 @@ const Projects = (props) => {
         src={hover ? gif.src : img.src}
         fallback={hover ? gif.fallback : img.fallback}
         alt={hover ? gif.alt : img.alt}
-        className={`h-screen w-full object-cover hover:hidden ${
+        className={`h-screen w-full relative col-start-1 col-end-1 inset-0 object-cover relative hover:hidden ${
           img.class || "object-center"
         }`}
         onMouseOver={() => setHover(true)}
         onMouseOut={() => setHover(false)}
       />
-      <section className="flex flex-col items-center text-center justify-around">
+      <div className="absolute text-center">
+        <ImgWithFallback
+          src={cautionwebp}
+          fallback={cautionsvg}
+          className="mt-40 left-0 transform -rotate-12"
+          alt="Under Construction"
+        />
+        <h2 className="bg-white text-red-500 top-2/4 left-2/4 -translate-y-1/2 -translate-x-1/2	">
+          WIP: Check back later
+        </h2>
+      </div>
+
+      <section className="flex flex-col col-start-2 col-end-2 items-center text-center justify-around">
         <header className="w-8/12">
           <h1 className="text-2xl font-black uppercase m-1"> Projects </h1>
         </header>
