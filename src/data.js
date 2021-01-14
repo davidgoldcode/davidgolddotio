@@ -1,5 +1,7 @@
 import { default as rotationsvg } from "./assets/original/therotation.svg";
 import { default as rotationwebp } from "./assets/webp/therotation.webp";
+import { default as rotationgif } from "./assets/original/rotationgif.gif";
+import { default as rotationgifwebp } from "./assets/webp/rotationgifwebp.webp";
 import { default as deathmetalgif } from "./assets/original/deathmetal.gif";
 import { default as deathmetalwebp } from "./assets/webp/deathmetal.webp";
 import { default as deathmetalstillsvg } from "./assets/webp/deathmetalstill.webp";
@@ -22,16 +24,16 @@ export const skills = [
 export const projects = [
   {
     name: "The Rotation",
-    link: "",
-    repo: "",
+    link: "https://therotation.club/",
+    repo: "https://therotation.club/",
     body:
       "The Rotation is start up operational nationwide known as the 'rent the runway' for men. The company offer 120+ cutting edge brands such as Rhude, Ksubi, and John Elliott. I helped build out the stripe api integration, embedded search functionality and their core catalog display",
     tech: ["React", "Ruby on Rails", "Python", "Stripe API", "FuseJS"],
     gif: {
-      src: rotationwebp,
-      fallback: rotationsvg,
-      alt: "Exploding Calculator",
-      class: "object-none w-full bg-black",
+      src: "",
+      fallback: "",
+      alt: "No GIF here rn :( ",
+      class: "",
     },
     img: {
       src: rotationwebp,
