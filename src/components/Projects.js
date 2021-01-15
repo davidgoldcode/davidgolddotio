@@ -11,18 +11,18 @@ const Projects = (props) => {
         src={hover ? gif.src : img.src}
         fallback={hover ? gif.fallback : img.fallback}
         alt={hover ? gif.alt : img.alt}
-        className={`h-screen w-full relative col-start-1 col-end-1 inset-0 relative hover:hidden ${
-          img.class || "object-center"
+        className={`w-full h-full col-start-1 col-end-1 hover:hidden ${
+          img.class || "object-contain"
         }`}
-        onMouseOver={() => setHover(true)}
-        onMouseOut={() => setHover(false)}
+        onMouseOver={gif.src && (() => setHover(true))}
+        onMouseOut={gif.src && (() => setHover(false))}
       />
       <section className="flex flex-col col-start-2 col-end-2 items-center text-center justify-around">
         <header className="w-8/12">
           <h1 className="text-2xl font-black uppercase m-1"> Projects </h1>
         </header>
         <section className="w-8/12">
-          <h3 className="text-2xl font-black uppercase m-1">The Rotation</h3>
+          <h3 className="text-2xl font-black uppercase m-1">{name}</h3>
           <p>{body}</p>
         </section>
         <section className="w-8/12">
@@ -36,7 +36,12 @@ const Projects = (props) => {
           </ul>
         </section>
         <footer className="flex flex-row w-8/12 justify-around">
-          <a href={repo} className="uppercase text-xl font-black uppercase m-1">
+          <a
+            href={repo}
+            className={`uppercase text-xl font-black uppercase m-1 ${
+              !repo && "invisible"
+            }`}
+          >
             See more
           </a>
         </footer>

@@ -8,16 +8,14 @@ import { default as deathmetalstillsvg } from "./assets/webp/deathmetalstill.web
 import { default as deathmetalstillwebp } from "./assets/webp/deathmetalstill.webp";
 import { default as nbapaintsvg } from "./assets/original/nbapaintwip.svg";
 import { default as nbapaintwebp } from "./assets/webp/nbapaintwip.webp";
-import { default as test } from "./assets/original/test.svg";
 
 export const skills = [
   "python",
   "javascript",
   "react",
   "nodejs",
-  "express",
-  "html",
-  "css",
+  "flask",
+  "ruby on rails",
   "jest",
   "sqlite3",
   "mongodb",
@@ -43,7 +41,7 @@ export const projects = [
       src: rotationwebp,
       fallback: rotationsvg,
       alt: "Model wearing designer clothing",
-      class: "object-left-top	object-cover",
+      class: "object-left-top object-cover",
     },
   },
   {
@@ -57,21 +55,21 @@ export const projects = [
       src: deathmetalgif,
       fallback: deathmetalwebp,
       alt: "Exploding Calculator",
-      class: "object-none w-full bg-black",
+      class: "object-none bg-black",
     },
     img: {
       src: deathmetalstillwebp,
-      fallback: deathmetalstillwebp,
+      fallback: deathmetalstillsvg,
       alt: "Exploding Calculator",
-      class: "object-none w-full bg-black",
+      class: "object-none bg-black",
     },
   },
   {
     name: "NBA Paint",
     link: "",
-    repo: "https://github.com/davidgoldcode/nbapaint",
+    repo: "",
     body:
-      "The simple calculator: a rite of passage in a new developer’s portfolio but with a hardcore twist 🤘",
+      "Building a website for my friends Twitter page which recreates NBA players in Microsoft Paint. Stay tuned for more details",
     tech: ["React", "Styled Components", "Twitter API"],
     gif: {
       src: "",
@@ -83,35 +81,7 @@ export const projects = [
       src: nbapaintwebp,
       fallback: nbapaintsvg,
       alt: "NBA Paint Homepage",
-      class: "object-scale-down w-full bg-brown",
+      class: "object-fit",
     },
   },
 ];
-
-// const social = [
-//   {
-//     comp: <AiFillGithub />,
-//     name: "Github",
-//     link: "https://github.com/davidgoldcode",
-//   },
-//   {
-//     comp: <AiOutlineMail />,
-//     name: "Mail",
-//     link: "mailto:davidgold@hey.com",
-//   },
-//   {
-//     comp: <AiOutlineTwitter />,
-//     name: "Twitter",
-//     link: "https://twitter.com/davidigold",
-//   },
-//   {
-//     comp: <AiFillMediumSquare />,
-//     name: "Medium",
-//     link: "https://golddavid.medium.com/",
-//   },
-//   {
-//     comp: <AiFillLinkedin />,
-//     name: "LinkedIn",
-//     link: "https://www.linkedin.com/in/davidigold/",
-//   },
-// ];
