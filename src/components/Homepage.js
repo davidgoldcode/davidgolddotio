@@ -27,35 +27,41 @@ const Homepage = () => {
         onMouseOver={() => setHover(true)}
         onMouseOut={() => setHover(false)}
       />
-      <section className="flex flex-col items-center text-center justify-around">
-        <header className="w-8/12">
-          <h1 className="text-3xl font-black m-1"> Hi 👋 I'm David </h1>
+      <section className="md:w-10/12 sm:w-11/12 mx-auto flex flex-col md:col-start-2 md:col-end-2 md:row-span-1 sm:row-start-2 sm:row-end-2 sm:col-span-1 items-center text-center justify-around">
+        <header>
+          <h1 className="md:text-3xl sm:text-xl font-black m-1">
+            Hi 👋 I'm David
+          </h1>
         </header>
-        <section className="w-8/12">
-          <h3 className="text-2xl font-black uppercase m-1">About</h3>
-          <p>
+        <section>
+          <h3 className="md:text-2xl sm:text-xl font-black uppercase m-1">
+            About
+          </h3>
+          <p className="md:text-base sm:text-sm">
             I am an aspiring developer, a basketball fan and a crocs enthusiast
             (seriously){" "}
           </p>{" "}
           <br></br>
-          <p>
+          <p className="md:text-base sm:text-sm">
             {" "}
             I recently finished a full-time, 6+ month intensive coding academy
             called Lambda School. If you're interested in learning more about me
             or potentially working with me, feel free to contact me
           </p>
         </section>
-        <section className="w-8/12">
-          <h3 className="text-2xl font-black uppercase m-1">Skills</h3>
+        <section>
+          <h3 className="md:text-2xl sm:text-xl font-black uppercase m-1">
+            Skills
+          </h3>
           <ul className="list-none ">
             {skills.map((item) => (
-              <li class="text-xs m-0.5 font-semibold inline-block border-2 border-gray-200 py-1 px-2 uppercase rounded-full text-gray-600 bg-blue-200">
+              <li class="text-xs m-0.5 font-semibold inline-block border-2 border-gray-200 sm:py-1 sm:px-2 uppercase rounded-full text-gray-600 bg-blue-200">
                 {item}
               </li>
             ))}
           </ul>
         </section>
-        <footer className="flex flex-row w-8/12 justify-around">
+        <footer className="flex flex-row justify-around">
           <a href="https://github.com/davidgoldcode">
             <AiFillGithub style={{ fontSize: iconSize }} />
           </a>
