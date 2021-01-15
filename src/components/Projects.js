@@ -6,18 +6,18 @@ const Projects = (props) => {
   const [hover, setHover] = useState(false);
 
   return (
-    <main className="grid grid-cols-2 h-screen w-screen">
+    <main className="grid md:grid-cols-2 md:grid-rows-1 sm:grid-cols-1 sm:grid-rows-2 h-screen w-screen overflow-hidden">
       <ImgWithFallback
         src={hover ? gif.src : img.src}
         fallback={hover ? gif.fallback : img.fallback}
         alt={hover ? gif.alt : img.alt}
-        className={`w-full h-full col-start-1 col-end-1 hover:hidden ${
+        className={`w-full h-full md:col-start-1 md:col-end-1 md:row-span-1 sm:row-start-1 sm:row-end-1 sm:col-span-1 hover:hidden ${
           img.class || "object-contain"
         }`}
         onMouseOver={gif.src && (() => setHover(true))}
         onMouseOut={gif.src && (() => setHover(false))}
       />
-      <section className="flex flex-col col-start-2 col-end-2 items-center text-center justify-around">
+      <section className="flex flex-col md:col-start-2 md:col-end-2 md:row-span-1 sm:row-start-2 sm:row-end-2 sm:col-span-1 items-center text-center justify-around">
         <header className="w-8/12">
           <h1 className="text-2xl font-black uppercase m-1"> Projects </h1>
         </header>
