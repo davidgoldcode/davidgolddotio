@@ -81,7 +81,7 @@ export const projects = [
       src: nbapaintwebp,
       fallback: nbapaintsvg,
       alt: "NBA Paint Homepage",
-      class: "object-fit",
+      class: "object-cover",
     },
   },
 ];
