@@ -18,12 +18,12 @@ const Homepage = () => {
   const iconSize = "2.5rem";
 
   return (
-    <main className="grid grid-cols-2 h-screen w-screen">
+    <main className="grid md:grid-cols-2 md:grid-rows-1 sm:grid-cols-1 sm:grid-rows-2 h-screen w-screen overflow-hidden">
       <ImgWithFallback
         src={hover ? webp : svg}
         fallback={hover ? gif : svg}
         alt="Gif of David in NYC"
-        className="h-screen w-screen object-cover object-top"
+        className="w-full h-full md:col-start-1 md:col-end-1 md:row-span-1 sm:row-start-1 sm:row-end-1 sm:col-span-1 object-cover object-top"
         onMouseOver={() => setHover(true)}
         onMouseOut={() => setHover(false)}
       />
