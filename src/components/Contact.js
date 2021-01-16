@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <main className="flex flex-col items-center text-center justify-around h-screen w-screen">
       <h1>See other projects on Github</h1>
-      <div className="md: w-9/12">
+      <div className="w-9/12 sm:w-full flex justify-center">
         <GitHubCalendar username="davidgoldcode" />
       </div>
       <div className="flex flex-col items-center h-1/3 w-9/12">

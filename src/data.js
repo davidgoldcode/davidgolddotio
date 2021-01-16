@@ -8,6 +8,8 @@ import { default as deathmetalstillsvg } from "./assets/webp/deathmetalstill.web
 import { default as deathmetalstillwebp } from "./assets/webp/deathmetalstill.webp";
 import { default as nbapaintsvg } from "./assets/original/nbapaintwip.svg";
 import { default as nbapaintwebp } from "./assets/webp/nbapaintwip.webp";
+import { default as dwightsvg } from "./assets/original/schruterest.svg";
+import { default as dwightwebp } from "./assets/webp/schruterest.webp";
 
 export const skills = [
   "python",
@@ -82,6 +84,26 @@ export const projects = [
       fallback: nbapaintsvg,
       alt: "NBA Paint Homepage",
       class: "object-cover",
+    },
+  },
+  {
+    name: "schrute.rest",
+    link: "schrute.rest",
+    repo: "https://github.com/davidgoldcode/schrute.rest",
+    body:
+      "A fun, simple random quote generating API as homage to my favorite show 'The Office'",
+    tech: ["NodeJS", "React", "Tailwind"],
+    gif: {
+      src: "",
+      fallback: "",
+      alt: "",
+      class: "",
+    },
+    img: {
+      src: dwightwebp,
+      fallback: dwightsvg,
+      alt: "schrute.rest",
+      class: "",
     },
   },
 ];
