@@ -1,5 +1,6 @@
 import ImgWithFallback from "../utils/ImgWithFallback";
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 import {
   AiFillGithub,
   AiOutlineMail,
@@ -49,7 +50,10 @@ const Homepage = () => {
           </h3>
           <ul className="list-none ">
             {skills.map((item) => (
-              <li class="text-xs sm:m-0.5 font-semibold inline-block border-2 border-gray-200 md:py-1 md:px-2 px-1 uppercase rounded-full text-gray-600 bg-blue-200">
+              <li
+                key={uuidv4()}
+                className="text-xs sm:m-0.5 font-semibold inline-block border-2 border-gray-200 md:py-1 md:px-2 px-1 uppercase rounded-full text-gray-600 bg-blue-200"
+              >
                 {item}
               </li>
             ))}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 import ImgWithFallback from "../utils/ImgWithFallback";
 
 const Projects = (props) => {
@@ -14,8 +15,8 @@ const Projects = (props) => {
         className={`w-full h-full md:col-start-1 md:col-end-1 md:row-span-1 sm:row-start-1 sm:row-end-1 sm:col-span-1 hover:hidden ${
           img.class || "object-contain"
         }`}
-        onMouseOver={gif.src && (() => setHover(true))}
-        onMouseOut={gif.src && (() => setHover(false))}
+        onMouseOver={gif.src ? () => setHover(true) : null}
+        onMouseOut={gif.src ? () => setHover(false) : null}
       />
       <section className="md:w-10/12 sm:w-11/12 mx-auto flex flex-col md:col-start-2 md:col-end-2 md:row-span-1 sm:row-start-2 sm:row-end-2 sm:col-span-1 items-center text-center justify-around">
         <header>
@@ -33,7 +34,10 @@ const Projects = (props) => {
           </h3>
           <ul className="list-none">
             {tech.map((item) => (
-              <li class="text-xs m-0.5 font-semibold inline-block border-2 border-gray-200 py-1 px-2 uppercase rounded-full">
+              <li
+                key={uuidv4()}
+                className="text-xs m-0.5 font-semibold inline-block border-2 py-1 px-2 uppercase rounded-full"
+              >
                 {item}
               </li>
             ))}
