@@ -33,7 +33,7 @@ const Projects = (props) => {
           </h3>
           <ul className="list-none">
             {tech.map((item) => (
-              <li class="text-xs m-0.5 font-semibold inline-block border-2 border-gray-200 py-1 px-2 uppercase rounded-full text-gray-600 bg-blue-200">
+              <li class="text-xs m-0.5 font-semibold inline-block border-2 border-gray-200 py-1 px-2 uppercase rounded-full">
                 {item}
               </li>
             ))}
@@ -42,7 +42,7 @@ const Projects = (props) => {
         <footer className="flex flex-row justify-around">
           <a
             href={repo}
-            className={`uppercase text-xl font-black uppercase m-1 ${
+            className={`uppercase text-xl uppercase m-1 ${
               !repo && "invisible"
             }`}
           >

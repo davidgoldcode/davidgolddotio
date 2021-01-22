@@ -7,6 +7,6 @@
     @apply md:text-3xl text-xl font-black m-1 uppercase;
   }
   a {
-    @apply text-xl sm:text-4xl;
+    @apply font-black underline sm:text-4xl;
   }
 }
