@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     colors: {
       black: {
+        light: "#1D1D23",
         DEFAULT: "#222023",
       },
       brown: {

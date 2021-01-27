@@ -10,6 +10,8 @@ import { default as nbapaintsvg } from "./assets/original/nbapaintwip.svg";
 import { default as nbapaintwebp } from "./assets/webp/nbapaintwip.webp";
 import { default as dwightsvg } from "./assets/original/schruterest.svg";
 import { default as dwightwebp } from "./assets/webp/schruterest.webp";
+import { default as slackdoodlepng } from "./assets/original/slackdoodlepng.png";
+import { default as slackdoodlewebp } from "./assets/webp/slackdoodlewebp.webp";
 
 export const skills = [
   "python",
@@ -67,26 +69,6 @@ export const projects = [
     },
   },
   {
-    name: "NBA Paint",
-    link: "",
-    repo: "",
-    body:
-      "Building a website for my friends Twitter page which recreates NBA players in Microsoft Paint. Stay tuned for more details",
-    tech: ["React", "Styled Components", "Twitter API"],
-    gif: {
-      src: "",
-      fallback: "",
-      alt: "",
-      class: "",
-    },
-    img: {
-      src: nbapaintwebp,
-      fallback: nbapaintsvg,
-      alt: "NBA Paint Homepage",
-      class: "object-cover",
-    },
-  },
-  {
     name: "schrute.rest",
     link: "schrute.rest",
     repo: "https://github.com/davidgoldcode/schrute.rest",
@@ -104,6 +86,45 @@ export const projects = [
       fallback: dwightsvg,
       alt: "schrute.rest",
       class: "",
+    },
+  },
+  {
+    name: "slackdoodle",
+    link: "https://github.com/davidgoldcode/slackdoodle",
+    repo: "https://github.com/davidgoldcode/slackdoodle",
+    body: "A Slackbot that sends you New Yorker cartoons",
+    tech: ["BoltJS", "NodeJS", "Express", "Puppeteer", "Pipedream"],
+    gif: {
+      src: "",
+      fallback: "",
+      alt: "",
+      class: "object-cover bg-black",
+    },
+    img: {
+      src: slackdoodlewebp,
+      fallback: slackdoodlewebp,
+      alt: "Screenshot of Slack bot that sends cartoons",
+      class: "object-contain bg-black-light",
+    },
+  },
+  {
+    name: "NBA Paint",
+    link: "",
+    repo: "",
+    body:
+      "Building a website for my friends Twitter page which recreates NBA players in Microsoft Paint. Stay tuned for more details",
+    tech: ["React", "Styled Components", "Twitter API"],
+    gif: {
+      src: "",
+      fallback: "",
+      alt: "",
+      class: "",
+    },
+    img: {
+      src: nbapaintwebp,
+      fallback: nbapaintsvg,
+      alt: "NBA Paint Homepage",
+      class: "object-cover",
     },
   },
 ];
