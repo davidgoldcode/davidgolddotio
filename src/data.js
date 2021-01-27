@@ -52,7 +52,7 @@ export const projects = [
     repo: "https://github.com/davidgoldcode/DeathMetalMath",
     body:
       "The simple calculator: a rite of passage in a new developer’s portfolio but with a hardcore twist 🤘",
-    tech: ["React", "Material UI", "Create React App"],
+    tech: ["React", "Material UI", "SoundCloud API", "Create React App"],
     gif: {
       src: deathmetalgif,
       fallback: deathmetalwebp,
