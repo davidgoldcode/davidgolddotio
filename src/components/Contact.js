@@ -11,8 +11,19 @@ const Contact = () => {
   return (
     <main className="flex flex-col items-center text-center justify-around h-screen w-screen">
       <h1>See other projects on Github</h1>
-      <div className="w-9/12 sm:w-full flex justify-center">
+      <div className="w-9/12 sm:w-full flex flex-col items-center">
         <GitHubCalendar username="davidgoldcode" />
+        <div className="">
+          <p className="bg-yellow h-full text-2xl font-bold">
+            This👆 is broken and{" "}
+            <a
+              className="no-underline text-2xl"
+              href="https://github.com/grubersjoe/react-github-calendar/issues/25"
+            >
+              is being fixed
+            </a>
+          </p>
+        </div>
       </div>
       <div className="flex flex-col items-center h-1/3 w-9/12">
         <h1>Get in touch</h1>

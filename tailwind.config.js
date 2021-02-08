@@ -11,6 +11,9 @@ module.exports = {
       brown: {
         DEFAULT: "#824E1B",
       },
+      yellow: {
+        DEFAULT: "rgba(252, 211, 77)",
+      },
     },
     extend: {
       display: ["hover"],
